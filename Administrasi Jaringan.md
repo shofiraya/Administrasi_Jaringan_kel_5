@@ -38,118 +38,91 @@ POLITEKNIK ELEKTRONIKA NEGERI SURABAYA <br>
      - Langkah 2: Buka Aplikasi Virtual Box, kemudian klik add untuk menambahkan instalasi sistem operasi debian. <br>
        <space> <img src="img/Langkah Jawab No 1/00.jpeg" alt="Langkah 2" style="width: 40%;">
 
-
      - Langkah 3: Isi nama untuk sistem operasi yang digunakan, kemudian pilih folder debian, dan pilih file ISO Image debian dengan type Linux, Versi Debian (64-bit). Lalu klik centang untuk melewati instalasi tanpa pengawasan. <br>
         <space> <img src="img/Langkah Jawab No 1/01.jpeg" alt="Langkah 3" style="width: 40%;">
   
      - Langkah 4: Untuk username gunakan nama bebas, dan isi juga passwordnya. Sedangkan hostname gunakan dengan format SysAdmin-NRP <br>
         <space> <img src="img/Langkah Jawab No 1/02.jpeg" alt="Langkah 4" style="width: 40%;">
 
-     - Langkah 5: Isi kebutuhan sistem sebagai berikut : <br> ● CPU : 2 core <br> ● RAM : 4096 (min) 
-     <br>
+     - Langkah 5: Isi kebutuhan sistem sebagai berikut : <br> ● CPU : 2 core <br> ● RAM : 4096 (min) <br>
         <space> <img src="img/Langkah Jawab No 1/03.jpeg" alt="Langkah 5" style="width: 40%;">
   
-     - Langkah 6: Pilih varian VDI (Virtual Disk Image) untuk Hardisknya 
-      <br>
+     - Langkah 6: Pilih varian VDI (Virtual Disk Image) untuk Hardisknya <br>
         <space> <img src="img/Langkah Jawab No 1/04.jpeg" alt="Langkah 6" style="width: 40%;">
 
-     - Langkah 7: Setelah itu, pilih installer menu yaitu graphical install
-      <br>
+     - Langkah 7: Setelah itu, pilih installer menu yaitu graphical install <br>
         <space> <img src="img/Langkah Jawab No 1/05.jpeg" alt="Langkah 7" style="width: 40%;">
 
-     - Langkah 8: Kemudian pilih bahasa indonesia
-      <br>
+     - Langkah 8: Kemudian pilih bahasa indonesia <br>
         <space> <img src="img/Langkah Jawab No 1/06.jpeg" alt="Langkah 8" style="width: 40%;">
 
-     - Langkah 9: Pilih peta tombol yang digunakan
-      <br>
+     - Langkah 9: Pilih peta tombol yang digunakan <br>
         <space> <img src="img/Langkah Jawab No 1/07.jpeg" alt="Langkah 9" style="width: 40%;">
 
-     - Langkah 10: Atur nama host untuk sistem ini, dengan format : SysAdmin-NRP
-      <br>
+     - Langkah 10: Atur nama host untuk sistem ini, dengan format : SysAdmin-NRP <br>
         <space> <img src="img/Langkah Jawab No 1/08.jpeg" alt="Langkah 10" style="width: 40%;">
 
-     - Langkah 11: Untuk domain bisa dilewati saja/diisi terserah
-      <br>
+     - Langkah 11: Untuk domain bisa dilewati saja/diisi terserah <br>
         <space> <img src="img/Langkah Jawab No 1/09.jpeg" alt="Langkah 11" style="width: 40%;">
      
-     - Langkah 12: Atur password/kata sandi untuk root
-      <br>
+     - Langkah 12: Atur password/kata sandi untuk root <br>
         <space> <img src="img/Langkah Jawab No 1/10.jpeg" alt="Langkah 12" style="width: 40%;">
 
-     - Langkah 13: Isi nama lengkap dari pengguna
-      <br>
+     - Langkah 13: Isi nama lengkap dari pengguna <br>
         <space> <img src="img/Langkah Jawab No 1/11.jpeg" alt="Langkah 13" style="width: 40%;">
 
-     - Langkah 14: Atur nama pengguna nya
-      <br>
+     - Langkah 14: Atur nama pengguna nya <br>
         <space> <img src="img/Langkah Jawab No 1/12.jpeg" alt="Langkah 14" style="width: 40%;">
 
-     - Langkah 15: Atur kata sandi untuk pengguna. Kata sandi pengguna harus berbeda dengan kata sandi root
-      <br>
+     - Langkah 15: Atur kata sandi untuk pengguna. Kata sandi pengguna harus berbeda dengan kata sandi root <br>
         <space> <img src="img/Langkah Jawab No 1/13.jpeg" alt="Langkah 15" style="width: 40%;">
 
-     - Langkah 16: Atur lah zona waktu yang digunakan
-      <br>
+     - Langkah 16: Atur lah zona waktu yang digunakan <br>
         <space> <img src="img/Langkah Jawab No 1/14.jpeg" alt="Langkah 16" style="width: 40%;">
 
-     - Langkah 17: Untuk pilihan partisipasi hardisk pilih yang manual
-      <br>
+     - Langkah 17: Untuk pilihan partisipasi hardisk pilih yang manual <br>
         <space> <img src="img/Langkah Jawab No 1/15.jpeg" alt="Langkah 17" style="width: 40%;">
 
-     - Langkah 18: Pilih partisi untuk mengubah susunannya
-      <br>
+     - Langkah 18: Pilih partisi untuk mengubah susunannya <br>
         <space> <img src="img/Langkah Jawab No 1/16.jpeg" alt="Langkah 18" style="width: 40%;">
 
-     - Langkah 19: Pilih “Ya” untuk partisi seluruh hard disk
-      <br>
+     - Langkah 19: Pilih “Ya” untuk partisi seluruh hard disk <br>
         <space> <img src="img/Langkah Jawab No 1/17.jpeg" alt="Langkah 19" style="width: 40%;">
 
-     - Langkah 20: Pilih ruang kosong untuk membuat sebuah partisi baru
-      <br>
+     - Langkah 20: Pilih ruang kosong untuk membuat sebuah partisi baru <br>
         <space> <img src="img/Langkah Jawab No 1/18.jpeg" alt="Langkah 20" style="width: 40%;">
         <space> <img src="img/Langkah Jawab No 1/19.jpeg" alt="Langkah 20" style="width: 40%;">
 
-     - Langkah 21: Atur ukuran partisi yang tidak melebihi batas maksimum yaitu 20.0 GB
-     <br>
+     - Langkah 21: Atur ukuran partisi yang tidak melebihi batas maksimum yaitu 20.0 GB <br>
         <space> <img src="img/Langkah Jawab No 1/20.jpeg" alt="Langkah 21" style="width: 40%;">
 
-     - Langkah 22: Pilih primer untuk jenis partisi
-      <br>
+     - Langkah 22: Pilih primer untuk jenis partisi <br>
         <space> <img src="img/Langkah Jawab No 1/21.jpeg" alt="Langkah 22" style="width: 40%;">
 
-     - Langkah 23: Atur lokasi partisi baru di awal ruang hard disk yang tersedia
-      <br>
+     - Langkah 23: Atur lokasi partisi baru di awal ruang hard disk yang tersedia <br>
         <space> <img src="img/Langkah Jawab No 1/22.jpeg" alt="Langkah 23" style="width: 40%;">
 
-     - Langkah 24: Ubah susunan partisi penanda bisa-boot dari mati menjadi hidup
-      <br>
+     - Langkah 24: Ubah susunan partisi penanda bisa-boot dari mati menjadi hidup <br>
         <space> <img src="img/Langkah Jawab No 1/23.jpeg" alt="Langkah 24" style="width: 40%;">
         <space> <img src="img/Langkah Jawab No 1/24.jpeg" alt="Langkah 24" style="width: 40%;">
 
-     - Langkah 25: Atur partisi yang digunakan yaitu sistem berkas berjurnal Ext4
-      <br>
+     - Langkah 25: Atur partisi yang digunakan yaitu sistem berkas berjurnal Ext4 <br>
         <space> <img src="img/Langkah Jawab No 1/25.jpeg" alt="Langkah 25" style="width: 40%;">
 
-     - Langkah 26: Penyusunan partisi \#1 telah diselesaikan, kemudian klik lanjutkan
-      <br>
+     - Langkah 26: Penyusunan partisi \#1 telah diselesaikan, kemudian klik lanjutkan <br>
         <space> <img src="img/Langkah Jawab No 1/26.jpeg" alt="Langkah 26" style="width: 40%;">
 
-     - Langkah 27: Pilih ruang kosong untuk membuat sebuah partisi baru (partisi \#2)
-      <br>
+     - Langkah 27: Pilih ruang kosong untuk membuat sebuah partisi baru (partisi \#2) <br>
         <space> <img src="img/Langkah Jawab No 1/27.jpeg" alt="Langkah 27" style="width: 40%;">
         <space> <img src="img/Langkah Jawab No 1/28.jpeg" alt="Langkah 27" style="width: 40%;">
 
-     - Langkah 28: Atur ukuran partisi yang tidak melebihi batas maksimum yaitu 5.0 GB
-      <br>
+     - Langkah 28: Atur ukuran partisi yang tidak melebihi batas maksimum yaitu 5.0 GB <br>
         <space> <img src="img/Langkah Jawab No 1/29.jpeg" alt="Langkah 28" style="width: 40%;">
 
-     - Langkah 29: Pilih jenis partisi “Primer”
-      <br>
+     - Langkah 29: Pilih jenis partisi “Primer” <br>
         <space> <img src="img/Langkah Jawab No 1/30.jpeg" alt="Langkah 29" style="width: 40%;">
 
-     - Lngkah 30: Atur lokasi partisi baru di awal ruang hard disk yang tersedia
-      <br>
+     - Lngkah 30: Atur lokasi partisi baru di awal ruang hard disk yang tersedia <br>
         <space> <img src="img/Langkah Jawab No 1/31.jpeg" alt="Langkah 30" style="width: 40%;">
 
      - Langkah 31: Ubah susunan partisi titik kait
