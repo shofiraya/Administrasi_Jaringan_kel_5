@@ -125,74 +125,106 @@ POLITEKNIK ELEKTRONIKA NEGERI SURABAYA <br>
      - Lngkah 30: Atur lokasi partisi baru di awal ruang hard disk yang tersedia <br>
         <space> <img src="img/Langkah Jawab No 1/31.jpeg" alt="Langkah 30" style="width: 40%;">
 
-     - Langkah 31: Ubah susunan partisi titik kait
-      <br>
+     - Langkah 31: Ubah susunan partisi titik kait <br>
         <space> <img src="img/Langkah Jawab No 1/32.jpeg" alt="Langkah 31" style="width: 40%;">
+        
      - Langkah 32:  Pilih “Masukkan secara manual” <br>
        <space> <img src="img/Langkah Jawab No 1/34.jpeg" alt="Langkah 32" style="width: 40%;">
+       
      - Langkah 33:   Ketikkan “/storage” <br>
        <space> <img src="img/Langkah Jawab No 1/35.jpeg" alt="Langkah 33" style="width: 40%;">
+       
      - Langkah 34:  Penyusunan partisi \#2 telah diselesaikan, kemudian klik lanjutkan <br>
        <space> <img src="img/Langkah Jawab No 1/36.jpeg" alt="Langkah 34" style="width: 40%;">
+       
      - Langkah 35: Pilih ruang kosong untuk membuat sebuah partisi baru (partisi \#3) <br>
        <space> <img src="img/Langkah Jawab No 1/37.jpeg" alt="Langkah 35" style="width: 40%;">
        <space> <img src="img/Langkah Jawab No 1/38.jpeg" alt="Langkah 35" style="width: 40%;">
+       
      - Langkah 36: Atur ukuran partisi yang tidak melebihi batas maksimum yaitu 1.5 GB <br>
        <space> <img src="img/Langkah Jawab No 1/39.jpeg" alt="Langkah 36" style="width: 40%;">
+       
      - Langkah 37: Pilih jenis partisi “Primer”<br>
        <space> <img src="img/Langkah Jawab No 1/40.jpeg" alt="Langkah 37" style="width: 40%;">
+       
      - Langkah 38: Atur lokasi partisi baru di awal ruang hard disk yang tersedia<br>
        <space> <img src="img/Langkah Jawab No 1/41.jpeg" alt="Langkah 38" style="width: 40%;">
+       
      - Langkah 39: Ubah penggunaan partisi menjadi ruang swap <br>
-       <space> <img src="img/Langkah Jawab No 1/42.jpeg" alt="Langkah 39" style="width: 40%;"> <img src="img/Langkah Jawab No 1/43.jpeg" alt="Langkah 39" style="width: 40%;">
+       <space> <img src="img/Langkah Jawab No 1/42.jpeg" alt="Langkah 39" style="width: 40%;">
+       <space> <img src="img/Langkah Jawab No 1/43.jpeg" alt="Langkah 39" style="width: 40%;">
+       
      - Langkah 40: Penyusunan partisi \#3 telah diselesaikan, kemudian klik lanjutkan. <br>
        <space> <img src="img/Langkah Jawab No 1/44.jpeg" alt="Langkah 40" style="width: 40%;">
-     - Langkah 41: Partisi telah selesai, kemudian klik “lanjutkan”
-     <br>
+       
+     - Langkah 41: Partisi telah selesai, kemudian klik “lanjutkan” <br>
        <space> <img src="img/Langkah Jawab No 1/45.jpeg" alt="Langkah 41" style="width: 40%;">
+       
      - Langkah 42: Pilih “Ya” untuk melanjutkan perubahan-perubahan sebelumnya ditulis ke hard disk <br>
        <space> <img src="img/Langkah Jawab No 1/46.jpeg" alt="Langkah 42" style="width: 40%;">
+       
      - Langkah 43: Pemasangan sistem dasar berjalan, lalu pilih “Tidak” dan klik “Lanjutkan” <br>
-       <space> <img src="img/Langkah Jawab No 1/47.jpeg" alt="Langkah 43" style="width: 40%;"> <img src="img/Langkah Jawab No 1/48.jpeg" alt="Langkah 43" style="width: 40%;">
+       <space> <img src="img/Langkah Jawab No 1/47.jpeg" alt="Langkah 43" style="width: 40%;">
+       <space> <img src="img/Langkah Jawab No 1/48.jpeg" alt="Langkah 43" style="width: 40%;">
+       
      - Langkah 44: Atur negara tempat cermin arsip debian berada di Indonesia <br>
        <space> <img src="img/Langkah Jawab No 1/49.jpeg" alt="Langkah 44" style="width: 40%;">
+       
      - Langkah 45: Atur cermin arsip debian deb.debian.org <br>
        <space> <img src="img/Langkah Jawab No 1/50.jpeg" alt="Langkah 45" style="width: 40%;">
+       
      - Langkah 46: Kosongi alamat proxy HTTP <br>
        <space> <img src="img/Langkah Jawab No 1/51.jpeg" alt="Langkah 46" style="width: 40%;">
+       
      - Langkah 47: Tunggu loading selesai untuk mengatur pengelolaan paket <br>
        <space> <img src="img/Langkah Jawab No 1/52.jpeg" alt="Langkah 47" style="width: 40%;">
+       
      - Langkah 48: Pilih tidak untuk partisipasi survey pengguna paket debian <br>
        <space> <img src="img/Langkah Jawab No 1/53.jpeg" alt="Langkah 48" style="width: 40%;">
+       
      - Langkah 49: Perangkat yang ingin diinstal adalah debian desktop environment, …GNOME, perkakas sistem standar <br>
        <space> <img src="img/Langkah Jawab No 1/54.jpeg" alt="Langkah 49" style="width: 40%;">
+       
      - Langkah 50: Kemudian tunggu untuk memilih & memasang perangkat lunak <br>
        <space> <img src="img/Langkah Jawab No 1/55.jpeg" alt="Langkah 50" style="width: 40%;">
+       
      - Langkah 51: Pilih Ya untuk pasang boot loader GRUB hard disk utama <br>
        <space> <img src="img/Langkah Jawab No 1/56.jpeg" alt="Langkah 51" style="width: 40%;">
+       
      - Langkah 52: Pilih piranti untuk pemasangan boot loader <br>
        <space> <img src="img/Langkah Jawab No 1/57.jpeg" alt="Langkah 52" style="width: 40%;">
+       
      - Langkah 53: Tunggu proses instalasi selesai <br>
        <space> <img src="img/Langkah Jawab No 1/59.jpeg" alt="Langkah 53" style="width: 40%;">
+       
      - Langkah 54: Klik lanjutkan untuk menyelesaikan instalasi <br>
        <space> <img src="img/Langkah Jawab No 1/60.jpeg" alt="Langkah 54" style="width: 40%;">
+       
      - Langkah 55: Tunggu proses instalasi untuk menjalankan sistem yang baru  <br>
        <space> <img src="img/Langkah Jawab No 1/61.jpeg" alt="Langkah 55" style="width: 40%;">
+       
      - Langkah 56: Berikut adalah tampilan untuk login user <br>
        <space> <img src="img/Langkah Jawab No 1/62.jpeg" alt="Langkah 56" style="width: 40%;">
+       
      - Langkah 57: Masukkan kata sandi yang sesuai untuk user <br>
        <space> <img src="img/Langkah Jawab No 1/63.jpeg" alt="Langkah 57" style="width: 40%;">
+       
      - Langkah 58: Kemudian pilih bahasa indonesia  <br>
        <space> <img src="img/Langkah Jawab No 1/64.jpeg" alt="Langkah 58" style="width: 40%;">
+       
      - Langkah 59: Pilih tata letak papan bahasa indonesia  <br>
        <space> <img src="img/Langkah Jawab No 1/65.jpeg" alt="Langkah 59" style="width: 40%;">
-     - Langkah 60: Untuk layanan lokasi diaktifkan agar bersifat privasi   <br>
+       
+     - Langkah 60: Untuk layanan lokasi diaktifkan agar bersifat privasi <br>
        <space> <img src="img/Langkah Jawab No 1/66.jpeg" alt="Langkah 60" style="width: 40%;">
-     - Langkah 61: Debian GNU?Linux sudah selesai dan siap untuk digunakan    <br>
+       
+     - Langkah 61: Debian GNU?Linux sudah selesai dan siap untuk digunakan <br>
        <space> <img src="img/Langkah Jawab No 1/67.jpeg" alt="Langkah 61" style="width: 40%;">
-     - Langkah 62: Ketik pada kolom pencarian "diskart" untuk melihat storage hardisk    <br>
+       
+     - Langkah 62: Ketik pada kolom pencarian "diskart" untuk melihat storage hardisk <br>
        <space> <img src="img/Langkah Jawab No 1/68.jpeg" alt="Langkah 62" style="width: 40%;">
-     - Langkah 63: Menampilkan volume hardisk.  <br>
+       
+     - Langkah 63: Menampilkan volume hardisk. <br>
        <space> <img src="img/Langkah Jawab No 1/69.jpeg" alt="Langkah 63" style="width: 40%;">
 
 2. Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bullseye) : versi kernel, kebutuhan sistem, penerapan systemd dan perbedaan packagenya (dalam bentuk tabel) ! 
@@ -502,7 +534,6 @@ root.Pada saat dijalankan sudo akan meminta password user yang menjalankan sudo 
 
 6. Jelaskan langkah-langkah penambahan user anda sebagai user sudo ! Gunakan perintah "su -" lalu setelah masuk sebagai root, jalankan perintah "visudo". Tambahkan user anda di bawah user root pada bagian " \# User privilege specification" <br>
 Jawab : <br>
-  <space> <img src="img/6.c.png" alt="Perintah sudo apt install" style="width: 40%;"> <br>
   Langkah-langkah untuk menambahkan pengguna sebagai pengguna sudo menggunakan perintah su - dan visudo adalah sebagai berikut: <br>
   - Menjalankan perintah su - untuk masuk sebagai root dan akan diminta untuk memasukkan kata sandi root. 
   - Setelah berhasil masuk sebagai root, jalankan perintah `visudo` untuk mengedit file konfigurasi sudoers. <br>
@@ -516,7 +547,8 @@ Jawab : <br>
     - shofira ALL=(ALL:ALL) ALL – baris ini berarti user shofira mempunyai hak-hak istimewa yang tidak terbatas dan dapat menjalankan semua command pada sistem.
     - %sudo ALL=(ALL:ALL) ALL – semua user di dalam grup sudo mendapatkan hak-hak istimewa untuk menjalankan command apa saja
   - Setelah menambahkan baris untuk pengguna baru, simpan perubahan tersebut dan keluar dari editor. Dengan menekan tombol "Ctrl + X", lalu tekan "Y" untuk menyimpan perubahan, dan terakhir tekan `Enter` untuk keluar dari editor.
-  - Setelah langkah-langkah ini selesai, pengguna baru sudah memiliki akses sudo.
+  - Setelah langkah-langkah ini selesai, pengguna baru sudah memiliki akses sudo. <br>
+    <space> <img src="img/6.c.png" alt="Perintah sudo apt install" style="width: 40%;">
   - Dengan visudo, dapat mengedit file konfigurasi sudoers dengan benar dan menghindari kemungkinan terkunci akibat kesalahan format yang mungkin terjadi jika mengedit file tersebut langsung.
 
 
