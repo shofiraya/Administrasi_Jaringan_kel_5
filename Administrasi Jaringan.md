@@ -534,7 +534,7 @@ root.Pada saat dijalankan sudo akan meminta password user yang menjalankan sudo 
 
 6. Jelaskan langkah-langkah penambahan user anda sebagai user sudo ! Gunakan perintah "su -" lalu setelah masuk sebagai root, jalankan perintah "visudo". Tambahkan user anda di bawah user root pada bagian " \# User privilege specification" <br>
 Jawab : <br>
-  Langkah-langkah untuk menambahkan pengguna sebagai pengguna sudo menggunakan perintah su - dan visudo adalah sebagai berikut: <br>
+  Langkah-langkah untuk menambahkan pengguna sebagai pengguna sudo menggunakan perintah su - dan visudo adalah sebagai berikut:
   - Menjalankan perintah su - untuk masuk sebagai root dan akan diminta untuk memasukkan kata sandi root. 
   - Setelah berhasil masuk sebagai root, jalankan perintah `visudo` untuk mengedit file konfigurasi sudoers. <br>
   <space> <img src="img/6.a.png" alt="Perintah su - dan visudo" style="width: 40%;"> <br>
