@@ -7,8 +7,8 @@ Default Gateway :
 ![alt text](assets/0.jpg)
 
 #### A. NETWORK MANAGER
-- Buka Network Manager (Anda bisa mencari "Network" di menu atas atau menggunakan perintah "nm-connection-editor" di terminal).
-![alt text](assets/9.png)
+- Buka Network Manager (Anda bisa mencari "Network" di menu atas atau menggunakan perintah `nm-connection-editor` di terminal).
+![Network Manager](assets/9.png)
 - Pilih interface yang terhubung/sambungkan terlebih dahulu.
 ![alt text](assets/1.jpg)
 - Buka setting pada interface tersebut.
@@ -27,11 +27,11 @@ Default Gateway :
 - Isi file dengan konfigurasi yang diinginkan. Contoh:
 ![alt text](assets/5.jpg)
 - Simpan file dan keluar dari text editor.
-- Jalankan perintah "sudo ifdown eth0" (gantikan "eth0" dengan nama interface yang ingin diatur) untuk mematikan interface. Lalu, Jalankan perintah "sudo ifup eth0" untuk mengaktifkan kembali interface dengan pengaturan yang baru.
-![alt text](assets/6.jpg)
-- Kemudian cek menggunakan ~$ ip addr
-![alt text](assets/7.jpg)
+- Jalankan perintah `sudo ifdown eth0` (gantikan "eth0" dengan nama interface yang ingin diatur) untuk mematikan interface. Lalu, Jalankan perintah `sudo ifup eth0` untuk mengaktifkan kembali interface dengan pengaturan yang baru.
+  ![alt text](assets/6.jpg)
+- Kemudian cek menggunakan `~$ ip addr`
+  ![alt text](assets/7.jpg)
 - Lakukan pengujian!
-![alt text](assets/8.jpg)
+  ![alt text](assets/8.jpg)
 
 Setelah melakukan salah satu cara di atas, pengaturan network di debian akan berubah sesuai dengan yang kita inginkan.
