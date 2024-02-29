@@ -1,6 +1,6 @@
 # 3. Mengubah Alamat IP Dinamis Menjadi Statis 
 
-Untuk melakukan setting network di debian, kita memiliki dua cara yaitu melalui GUI (Network Manager) dan CLI (Menggunakan file /etc/network/interfaces).
+Terdapat dua cara untuk melakukan setting network di debian yaitu melalui GUI (Network Manager) dan CLI (Menggunakan file /etc/network/interfaces).
 
 Default Gateway :
 
