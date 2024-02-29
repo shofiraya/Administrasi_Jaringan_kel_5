@@ -17,7 +17,7 @@ Default Gateway :
 <br> Netmask : 255.255.255.0
 <br> DNS : 8.8.8.8
 <br> Lalu Klik Apply
-![alt text](assets/2.jpg)
+<br> ![alt text](assets/2.jpg)
 
 #### B. Menggunakan interfaces File:
 
@@ -27,7 +27,7 @@ Default Gateway :
 - Isi file dengan konfigurasi yang diinginkan. Contoh:
 ![alt text](assets/5.jpg)
 - Simpan file dan keluar dari text editor.
-- Jalankan perintah `sudo ifdown eth0` (gantikan "eth0" dengan nama interface yang ingin diatur) untuk mematikan interface. Lalu, Jalankan perintah `sudo ifup eth0` untuk mengaktifkan kembali interface dengan pengaturan yang baru.
+- Jalankan perintah `sudo ifdown eth0` (gantikan "eth0" dengan nama interface yang ingin diatur) untuk mematikan interface. Lalu, Jalankan perintah `sudo ifup eth0` untuk mengaktifkan kembali interface dengan pengaturan yang baru. <br>
   ![alt text](assets/6.jpg)
 - Kemudian cek menggunakan `~$ ip addr`
   ![alt text](assets/7.jpg)
