@@ -1,4 +1,4 @@
-Pengumpulan Tugas Workshop Administrasi Jaringan
+## Pengumpulan Tugas Workshop Administrasi Jaringan
 
 Nama: Shofira Izza Nurrohmah <br>
 NRP: 3122500026 <br>
@@ -8,7 +8,7 @@ Kelas: 2 D3 IT A <br>
 | TUGAS | FILE |
 | ------| -----|
 | TUGAS 1 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/blob/main/Tugas%201/Administrasi%20Jaringan.md)_ |
-| TUGAS 2 | _[FILE](https://github.com/mirtacn/SysAdmin-3122500009/blob/main/Administrasi-Jaringan.md)_ |
+| TUGAS 2 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/tree/main/Tugas%202)_ |
 
 # KELOMPOK 7
 | NAMA | NRP |
