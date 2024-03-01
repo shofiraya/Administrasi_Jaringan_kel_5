@@ -1,18 +1,3 @@
-# DAFTAR TUGAS WORKSHOP ADMINISTRASI JARINGAN
-| TUGAS | FILE |
-| ------| -----|
-| TUGAS 1 | _[FILE](https://github.com/mirtacn/SysAdmin-3122500009/blob/main/Administrasi-Jaringan.md)_ |
-| TUGAS 2 | _[FILE](https://github.com/mirtacn/SysAdmin-3122500009/blob/main/Administrasi-Jaringan.md)_ |
-
-# KELOMPOK 7
-| NAMA | NRP |
-| ---- | --- |
-| [Arsyita Devanaya Arianto](https://github.com/Arsyitadevanaya)| 3122500008 |
-| [Mirta Chadhirotin Nachlah](https://github.com/mirtacn)| 3122500009 |
-| [Shofira Izza Nurrohmah](github.com/shofiraya)| 3122500026 |
-
--------
-
 ## 1. Linux Directory Structure
 
 Berdasarkan referensi https://www.debianadmin.com/linux-directory-structure-overview.html, Perbedaan antara Linux dan Windows terutama terletak pada struktur direktori dan format aksesnya. Berikut adalah beberapa poin penting:
