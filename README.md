@@ -7,7 +7,7 @@ Kelas: 2 D3 IT A <br>
 # DAFTAR TUGAS WORKSHOP ADMINISTRASI JARINGAN
 | TUGAS | FILE |
 | ------| -----|
-| TUGAS 1 | _[FILE](https://github.com/mirtacn/SysAdmin-3122500009/blob/main/Administrasi-Jaringan.md)_ |
+| TUGAS 1 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/blob/main/Tugas%201/Administrasi%20Jaringan.md)_ |
 | TUGAS 2 | _[FILE](https://github.com/mirtacn/SysAdmin-3122500009/blob/main/Administrasi-Jaringan.md)_ |
 
 # KELOMPOK 7
