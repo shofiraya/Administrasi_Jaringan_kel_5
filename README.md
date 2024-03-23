@@ -10,6 +10,7 @@ Kelas: 2 D3 IT A <br>
 | TUGAS 1 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/tree/main/Tugas_1)_ |
 | TUGAS 2 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/tree/main/Tugas_2)_ |
 | TUGAS 3 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/tree/main/Tugas_3)_ |
+| TUGAS 4 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/tree/main/Tugas_4)_ |
 
 ## KELOMPOK 5
 | NAMA | NRP |
