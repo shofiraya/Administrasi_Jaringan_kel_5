@@ -14,7 +14,7 @@ Kelas: 2 D3 IT A <br>
 </h4>
 
 <h4 align="center">
-Dosen Pengampu : Ferry Astika
+Dosen Pengampu : Dr Ferry Astika Saputra ST, M.Sc	
 </h4>
 
 <br>
