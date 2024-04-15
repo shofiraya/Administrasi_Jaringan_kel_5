@@ -1,8 +1,8 @@
 # PENGUMPULAN TUGAS WORKSHOP ADMINISTRASI JARINGAN
 
-Nama: Shofira Izza Nurrohmah <br>
-NRP: 3122500026 <br>
-Kelas: 2 D3 IT A <br>
+<h2>Nama: Shofira Izza Nurrohmah</h2> <br>
+<h2>NRP: 3122500026</h2> <br>
+<h2>Kelas: 2 D3 IT A</h2> <br>
 
 # DAFTAR TUGAS WORKSHOP ADMINISTRASI JARINGAN
 | TUGAS | FILE |
@@ -11,6 +11,7 @@ Kelas: 2 D3 IT A <br>
 | TUGAS 2 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/tree/main/Tugas_2)_ |
 | TUGAS 3 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/tree/main/Tugas_3)_ |
 | TUGAS 4 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/tree/main/Tugas_4)_ |
+| TUGAS 5 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/tree/main/Tugas_5)_ |
 
 ## KELOMPOK 5
 | NAMA | NRP |
