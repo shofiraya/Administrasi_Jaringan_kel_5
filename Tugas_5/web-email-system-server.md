@@ -75,12 +75,16 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
     2. Mengkonfigurasi Apache2
     - `sudo nano /etc/apache2/conf-enabled/security.conf`
     ![alt text](assets/b2.png)
+
     - `sudo nano /etc/apache2/mods-enabled/dir.conf`
     ![alt text](assets/b3.png)
+
     - `sudo nano /etc/apache2/apache2.conf`
     ![alt text](assets/b4.png)
+
     - `sudo nano /etc/apache2/sites-enabled/000-default.conf`
     ![alt text](assets/b5.png)
+
     - `sudo systemctl reload apache2`
     ![alt text](assets/b6.png)
 
@@ -203,19 +207,73 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
     ![alt text](assets/f20.png)
 
     3. Menambahkan konfigurasi anti spam
-
     ![alt text](assets/f21.png)
     ![alt text](assets/f22.png)
 
 - <h5>DOVECOT : IMAP4 (TCP 143) and POP3 (TCP110) Server</h5>
     1. Instalasi Dovecot Server
-    `apt -y install dovecot-core dovecot-pop3d dovecot-imapd`
-
+    
+    - `sudo apt -y install dovecot-core dovecot-pop3d dovecot-imapd`
     ![alt text](assets/g1.png)
+
+    - `sudo nano /etc/dovecot/dovecot.conf`
+    ![alt text](assets/g2.png)
+
+    - `sudo nano /etc/dovecot/conf.d/10-auth.conf`
+    ![alt text](assets/g3.png)
+    ![alt text](assets/g4.png)
+
+    - `sudo nano /etc/dovecot/conf.d/10-mail.conf`
+    ![alt text](assets/g5.png)
+
+    - `sudo nano /etc/dovecot/conf.d/10-master.conf`
+    ![alt text](assets/g6.png)
+
+    - `sudo systemctl restart dovecot`
+    ![alt text](assets/g7.png)
 
 <h4>FINAL CHECK untuk semua SERVICES</h4>
 
 ![alt text](assets/h.png)
 
 <h4>Melakukan Cek terhadap Layanan Posfix</h4>
+
 `telnet mail.kelompok5.local 25`
+
+![alt text](assets/telnet.png)
+
+
+<h4>Thunderbird (Email GUI Client)</h4>
+
+<h4>RoundCube (Webmail)</h4>
+
+1. Membuat sebuah Database RoundCube
+- `sudo mysql -u root -p`
+    - `create database roundcube`
+    - `grant all privileges on roundcube.* to roundcube@``localhost`` identified by ``password``;`
+    ![alt text](assets/i.png)
+
+2. Install dan Konfigurasi RoundCube
+![alt text](assets/i1.png)
+![alt text](assets/i2.png)
+
+- Mengimpor skema database Roundcube ke database "roundcube"
+![alt text](assets/i3.png)
+
+- `sudo nano /etc/roundcube/debian-db.php`
+![alt text](assets/i4.png)
+
+- `sudo nano /etc/roundcube/config.inc.php`
+![alt text](assets/i5.png)
+
+- `sudo nano /etc/apache2/conf-enabled/roundcube.conf`
+![alt text](assets/i6.png)
+
+- `sudo systemctl restart apache2`
+Melakukan restart layanan Apache setelah mengubah konfigurasi agar dapat diterapkan pada aplikasi Roundcube yang diakses melalui web server.
+
+- Buka roundcube di web browser
+![alt text](assets/i7.png)
+
+- Melakukan send email
+![alt text](assets/i8.png)
