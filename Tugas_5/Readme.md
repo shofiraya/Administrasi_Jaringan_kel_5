@@ -231,7 +231,6 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
     - `sudo nano /etc/dovecot/conf.d/10-auth.conf`
     ![alt text](assets/g3.png)
     Menonaktifkan otentikasi plaintext (tidak terenkripsi) user.
-
     ![alt text](assets/g4.png)
     Menentukan mekanisme otentikasi yang diperbolehkan untuk user yang terhubung ke server Dovecot. Ada dua mekanisme yaitu plain (tidak terkenkripsi) dan login (encode)
 
