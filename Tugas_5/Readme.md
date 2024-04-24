@@ -271,7 +271,7 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
 2. Melalukan run pada Thunderbird <br>
 ![alt text](assets/j4.png)
 
-3. Setup nama, email, password pengguna,
+3. Setup nama, email, dan password pengguna
 ![alt text](assets/j5.png)
 ![alt text](assets/j6.png)
 ![alt text](assets/j7.png)
@@ -327,31 +327,31 @@ Melakukan tes melalui web server dengan alamat domain local /roundcube. Login me
 
 
 ## Melanjutkan setup web email server
-1. Mengubah network NAT menjadi Bridged Adaptor dengan name Realtek USB FE family Controllor
+1. Mengubah network NAT menjadi Bridged Adapter dengan name Realtek USB FE Family Controller
    ![alt text](assets/pic84.png)
    
-2. Mengubah IP menjadi 192.168.5.10
+2. Mengubah IP menjadi 192.168.5.10 
    ![alt text](assets/pic85.png)
    ![alt text](assets/pic86.png)
 
-3. Mengubah file named.conf.options
+3. Mengubah file nano named.conf.options
    ![alt text](assets/pic87.png)
    ![alt text](assets/pic88.png)
 
 4. Mengubah file /etc/resolv.conf <br>
     ![alt text](assets/pic89.png)
 
-5. Melakukan pengecekkan nslookup <br>
+5. Melakukan pengecekkan dengan nslookup <br>
     ![alt text](assets/pic90.png)
 
-6. Melakukan seting WinBox
+6. Melakukan setting WinBox
    ![alt text](assets/pic91.png)
    
 7. Melakukan Testing atau uji coba
    - Melakukan pengepingan pada detik.com
    ![alt text](assets/pic92.png)
    <br>
-   - Melakukan pengepingan pada kelompok6
+   - Melakukan pengepingan pada ip kelompok 6
    ![alt text](assets/pic93.png)
 
 8. Melakukan pengiriman pesan antar kelompok dengan RoundCube
