@@ -60,7 +60,7 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
 ![alt text](assets/a5.png)
 
 8. Pengecekan status
-` timedatectl timesync-status`
+` timedatectl timesync-status` <br>
 ![alt text](assets/a6.png)
 
 
@@ -106,7 +106,7 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
     - `echo '<?php echo ``php -i``."\n"; ?>' > php_test.php`
 
     4. Menjalankan kode php yang telah dibuat
-    - `php php_test.php | head`
+    - `php php_test.php | head` <br>
     ![alt text](assets/c3.png)
 
 
@@ -125,8 +125,8 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
         ![alt text](assets/d4.png)
     - `sudo systemctl restart php8.2-fpm apache2`
         ![alt text](assets/d5.png)
-    3. Melakukan test validasi terhadap PHP-FM dengan membuat file info.php di root document
-    `echo '<?php phpinfo(); ?>' > /var/www/html/info.php`
+    3. Melakukan test validasi terhadap PHP-FM dengan membuat file info.php di root document <br>
+    `echo '<?php phpinfo(); ?>' > /var/www/html/info.php` <br>
     ![alt text](assets/d6.png)
 
     4. Melakukan test di browser
@@ -204,8 +204,8 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
     ![alt text](assets/f16.png)
     ![alt text](assets/f17.png)
     ![alt text](assets/f18.png)
-    ![alt text](assets/f19.png)
-    “disable_vrfy_command= yes”: mengatur apakah perintah ‘VRFY’ harus dinonaktifkan atau tidak.“smtpd_helo_required = yes”: mengatur apakah client SMTP diharuskan memberikan perintah ‘HELO’ sebelum diizinkan untuk mengirim email.“message_size_limit= 10240000”: mengatur batas ukuran pesan email yang diterima oleh server (dalam byte).
+    ![alt text](assets/f19.png) <br>
+    `disable_vrfy_command= yes`: mengatur apakah perintah ‘VRFY’ harus dinonaktifkan atau tidak.“smtpd_helo_required = yes”: mengatur apakah client SMTP diharuskan memberikan perintah ‘HELO’ sebelum diizinkan untuk mengirim email.“message_size_limit= 10240000”: mengatur batas ukuran pesan email yang diterima oleh server (dalam byte).
 
     
     10. Membuat atau mengupdate database alias Postfix setelah ada perubahan dalam file config alias (/etc/aliases)
@@ -213,7 +213,7 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
 
     3. Menambahkan konfigurasi anti spam
     ![alt text](assets/f21.png)
-    ![alt text](assets/f22.png)
+    ![alt text](assets/f22.png) <br>
     Client restrictions, sender restrictions, dan HELO restrictions pada server email Postfix.
     “permit_mynetworks”: Mengizinkan koneksi dari jaringan lokal (mynetworks)
 
@@ -225,21 +225,21 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
     ![alt text](assets/g1.png)
 
     - `sudo nano /etc/dovecot/dovecot.conf`
-    ![alt text](assets/g2.png)
+    ![alt text](assets/g2.png) <br>
     Menentukan network interface yang akan di-listen oleh server Dovecot 
 
     - `sudo nano /etc/dovecot/conf.d/10-auth.conf`
-    ![alt text](assets/g3.png)
+    ![alt text](assets/g3.png) <br>
     Menonaktifkan otentikasi plaintext (tidak terenkripsi) user.
-    ![alt text](assets/g4.png)
+    ![alt text](assets/g4.png) <br>
     Menentukan mekanisme otentikasi yang diperbolehkan untuk user yang terhubung ke server Dovecot. Ada dua mekanisme yaitu plain (tidak terkenkripsi) dan login (encode)
 
     - `sudo nano /etc/dovecot/conf.d/10-mail.conf`
-    ![alt text](assets/g5.png)
+    ![alt text](assets/g5.png) <br>
     Menentukan direktori penyimpanan mailbox user.
 
     - `sudo nano /etc/dovecot/conf.d/10-master.conf`
-    ![alt text](assets/g6.png)
+    ![alt text](assets/g6.png) <br>
     Mengatur config mekanisme otentikasi SASL pada Postfix
       - Baris pertama: Postfix akan listen koneksi SASL di socket UNIX pada direktori /var/spool/postfix/private/auth.
       - Baris kedua mengatur permissions pada socket Unix menjadi 0666, yang artinya dapat diakses oleh semua user
@@ -263,12 +263,12 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
 
 <h4>Thunderbird (Email GUI Client)</h4>
 
-1. Install Thunderbird melalui CLI
+1. Install Thunderbird melalui CLI <br>
 ![alt text](assets/j1.png)
 ![alt text](assets/j2.png)
 ![alt text](assets/j3.png)
 
-2. Melalukan run pada Thunderbird
+2. Melalukan run pada Thunderbird <br>
 ![alt text](assets/j4.png)
 
 3. Setup nama, email, password pengguna,
@@ -289,7 +289,7 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
 1. Membuat sebuah Database RoundCube
 - `sudo mysql -u root -p` membuka client baris perintah MariaDB, meminta koneksi ke server MariaDB menggunakan user root dan password pengguna tersebut. Kemudian memberikan akses ke consol MariaDB untuk melakukan operasi database
     - `create database roundcube` untuk membuat database bernama "roundcube" di server MariaDB
-    - `grant all privileges on roundcube.* to roundcube@``localhost`` identified by ``password``;` memberikan semua hak akses ke database "roundcube" kepada pengguna 'roundcube'@'localhost'. Kata sandi 'password' adalah kata sandi yang diberikan untuk pengguna 'roundcube'.
+    - `grant all privileges on roundcube.* to roundcube@``localhost`` identified by ``password``;` memberikan semua hak akses ke database "roundcube" kepada pengguna 'roundcube'@'localhost'. Kata sandi 'password' adalah kata sandi yang diberikan untuk pengguna 'roundcube'. <br>
     ![alt text](assets/i.png)
 
 2. Install dan Konfigurasi RoundCube
@@ -300,15 +300,15 @@ delay terpendek. Biasanya setiap organisasi atau negara mempunyai NTP Server sen
 ![alt text](assets/i3.png)
 
 - `sudo nano /etc/roundcube/debian-db.php`
-![alt text](assets/i4.png)
+![alt text](assets/i4.png) <br>
 Membuka file debian-db.php dari RoundCube yang  berisi konfigurasi database untuk RoundCube.
 
 - `sudo nano /etc/roundcube/config.inc.php`
-![alt text](assets/i5.png)
+![alt text](assets/i5.png) <br>
 Membuka file konfigurasi config.inc.php dari RoundCube yang berisi konfigurasi umum untuk aplikasi RoundcCube.
 
 - `sudo nano /etc/apache2/conf-enabled/roundcube.conf`
-![alt text](assets/i6.png)
+![alt text](assets/i6.png) <br>
 Membuka file konfigurasi roundcube.conf dari Apache yang berisi konfigurasi untuk mengonfigurasi akses ke aplikasi RoundCube melalui server web Apache.
 
 - `sudo systemctl restart apache2`
@@ -338,10 +338,10 @@ Melakukan tes melalui web server dengan alamat domain local /roundcube. Login me
    ![alt text](assets/pic87.png)
    ![alt text](assets/pic88.png)
 
-4. Mengubah file /etc/resolv.conf
+4. Mengubah file /etc/resolv.conf <br>
     ![alt text](assets/pic89.png)
 
-5. Melakukan pengecekkan nslokkup
+5. Melakukan pengecekkan nslookup <br>
     ![alt text](assets/pic90.png)
 
 6. Melakukan seting WinBox
@@ -350,7 +350,7 @@ Melakukan tes melalui web server dengan alamat domain local /roundcube. Login me
 7. Melakukan Testing atau uji coba
    - Melakukan pengepingan pada detik.com
    ![alt text](assets/pic92.png)
-   
+   <br>
    - Melakukan pengepingan pada kelompok6
    ![alt text](assets/pic93.png)
 
