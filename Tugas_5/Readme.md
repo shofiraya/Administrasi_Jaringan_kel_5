@@ -350,7 +350,6 @@ Melakukan tes melalui web server dengan alamat domain local /roundcube. Login me
 7. Melakukan Testing atau uji coba
    - Melakukan pengepingan pada detik.com
    ![alt text](assets/pic92.png)
-   <br>
    - Melakukan pengepingan pada ip kelompok6
    ![alt text](assets/pic93.png)
 
