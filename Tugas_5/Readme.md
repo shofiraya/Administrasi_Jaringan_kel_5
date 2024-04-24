@@ -324,3 +324,38 @@ Melakukan restart layanan Apache setelah mengubah konfigurasi agar dapat diterap
 ![alt text](assets/i11.png)
 
 Melakukan tes melalui web server dengan alamat domain local /roundcube. Login menggunakan username dan password yang telah disetting, lalu kirim pesan antar user, untuk melihat roundcube sudah berjalan dengan sesuai atau belum. Jika berhasil maka message atau pesan antar user bisa terkirim dan terbaca.
+
+
+## Melanjutkan setup web email server
+1. Mengubah network NAT menjadi Bridged Adaptor dengan name Realtek USB FE family Controllor
+   ![alt text](assets/pic84.png)
+   
+2. Mengubah IP menjadi 192.168.5.10
+   ![alt text](assets/pic85.png)
+   ![alt text](assets/pic86.png)
+
+3. Mengubah file named.conf.options
+   ![alt text](assets/pic87.png)
+   ![alt text](assets/pic88.png)
+
+4. Mengubah file /etc/resolv.conf
+   ![alt text](assets/pic89.png)
+
+5. Melakukan pengecekkan nslokkup
+   ![alt text](assets/pic90.png)
+
+6. Melakukan seting WinBox
+   ![alt text](assets/pic91.png)
+   
+7. Melakukan Testing atau uji coba
+   - Melakukan pengepingan pada detik.com
+    ![alt text](assets/pic92.png)
+   - Melakukan pengepingan pada kelompok6
+    ![alt text](assets/pic93.png)
+
+8. Melakukan pengiriman pesan antar kelompok dengan RoundCube
+   - Melakukan pengiriman pesan dari arsyita@mail.kelompok5.local ke iqbal@mail.kelompok6.local
+    ![alt text](assets/pic94.jpg)
+   - Melakukan penerimaan pesan dari adam@mail.kelompok8.local ke arsyita@mail.kelompok5.local
+    ![alt text](assets/pic95.png)
+   
