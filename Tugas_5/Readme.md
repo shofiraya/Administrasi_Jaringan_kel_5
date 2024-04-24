@@ -339,19 +339,20 @@ Melakukan tes melalui web server dengan alamat domain local /roundcube. Login me
    ![alt text](assets/pic88.png)
 
 4. Mengubah file /etc/resolv.conf
-   ![alt text](assets/pic89.png)
+    ![alt text](assets/pic89.png)
 
 5. Melakukan pengecekkan nslokkup
-   ![alt text](assets/pic90.png)
+    ![alt text](assets/pic90.png)
 
 6. Melakukan seting WinBox
    ![alt text](assets/pic91.png)
    
 7. Melakukan Testing atau uji coba
    - Melakukan pengepingan pada detik.com
-    ![alt text](assets/pic92.png)
+   ![alt text](assets/pic92.png)
+   
    - Melakukan pengepingan pada kelompok6
-    ![alt text](assets/pic93.png)
+   ![alt text](assets/pic93.png)
 
 8. Melakukan pengiriman pesan antar kelompok dengan RoundCube
    - Melakukan pengiriman pesan dari arsyita@mail.kelompok5.local ke iqbal@mail.kelompok6.local
