@@ -29,26 +29,33 @@ POLITEKNIK ELEKTRONIKA NEGERI SURABAYA <br>
 <h3>Containerization</h3>
 
 1. <h4>Before Install Docker Engine, Uninstall Conflicted</h4>
-`for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done`
+- `for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done`
 ![alt text](assets/uninstall.png)
 
 2. <h4>Install Docker Engine</h4>
 
-- <h5>Add Docker's official GPG key: </h5>
-`sudo apt-get update`
-`sudo apt-get install ca-certificates curl`
-`sudo install -m 0755 -d /etc/apt/keyrings`
-`sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc`
-`sudo chmod a+r /etc/apt/keyrings/docker.asc`
+- Add Docker's official GPG key: 
+- `sudo apt-get update`
+
+- `sudo apt-get install ca-certificates curl`
+
+- `sudo install -m 0755 -d /etc/apt/keyrings`
+
+- `sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc`
+
+- `sudo chmod a+r /etc/apt/keyrings/docker.asc`
 ![alt text](assets/install.png)
-![alt text](assets/install1.png)
 ![alt text](assets/install2.png)
 
 - <h5>Add the repository to Apt sources:</h5>
 `echo \`
-`  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \`
+
+`"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \`
+
 ` $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \`
-`  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
+
+`sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
+
 `sudo apt-get update`
 ![alt text](assets/install2.png)
 
@@ -66,7 +73,7 @@ Command : docker run [image-name]
 ![alt text](assets/runhelloworld.png)
 
 
-<h4>Menjalankan sebuah project</h4>
+<h4>Menjalankan project docker-example dari github</h4>
 
 1. Clone dari github
 `git clone https://github.com/alfiyansys/docker-examples.git`
@@ -87,20 +94,17 @@ http://localhost:3000
 <h4></h4>
 
 1. Run Uptime-Kuma monitoring service using docker: https://github.com/louislam/uptime-kuma
-    - git clone uptime kurma
-    `git clone https://github.com/louislam/uptime-kuma.git`
-    `cd uptime kurma`
     - `docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1`
     ![alt text](assets/runuptime.png)
 
-    - Pengecekan pada port 3001
+    - Pengecekan pada port 3000
     `http://localhost:3000`
     ![alt text](assets/cekuptime.png)
 
 2. Run using virtualhost with access domain, example: http://monitoring.kelompokX.local 
 
 - Konfigurasi file db.kelompok5.local
-> Menambahkan monitoring pada CNAME ns
+-  > Menambahkan monitoring pada CNAME ns
 `sudo nano /var/lib/bind/db.kelompok5.local`
 ![alt text](assets/konfignamed.png)
 `sudo systemctl restart named`
@@ -108,9 +112,9 @@ http://localhost:3000
 - Install a2enmod
 `sudo a2enmod`
 ![alt text](assets/a2enmod.png)
+![alt text](assets/a2enmod1.png)
 Memasukkan package proxy
 `proxy proxy_ajp proxy_http rewrite deflate headers proxy_balancer proxy_connect proxy_html`
-![alt text](assets/.png)
 
 - Konfigurasi Apache2
 `sudo nano /etc/apache2/sites-enabled/000-default.conf`
@@ -119,3 +123,4 @@ Menambahkan beberapa baris untuk monitoring subdomain dengan proxy
 `sudo systemctl restart apache2`
 
 - Cek dengan browser
+![alt text](assets/monitoring.png)
