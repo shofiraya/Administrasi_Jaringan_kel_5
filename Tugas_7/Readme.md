@@ -31,13 +31,16 @@ Buka link di bawah ini pada browser
 https://www.docker.com/101-tutorial/
 
 Masuk ke https://labs.play-with-docker.com/ untuk mengakses terminal PWD Anda
+
 ![alt text](assets/docker-play.png)
 
 Setelah login kemudian klik Start. Setelah muncul halaman seperti di bawah ini, “add new instance”.
 ![alt text](assets/get1.png)
 
-Ketik perintah berikut di terminal PWD: 
-docker run -dp 80:80 docker/getting-started:pwd
+Ketik perintah berikut di terminal PWD:
+
+`docker run -dp 80:80 docker/getting-started:pwd`
+
 ![alt text](assets/get2.png)
 
 Keterangan:
@@ -217,87 +220,90 @@ Ada dua cara untuk menempatkan container di jaringan: 1) Tetapkan di awal atau 2
 
 - Di dalam container, gunakan perintah dig, yang merupakan alat DNS yang berguna. Kita akan mencari alamat IP untuk nama host mysql.
 ![alt text](assets/multi5.png)
+![alt text](assets/multi6.png)
+![alt text](assets/multi7.png)
 
 #### Running our App with MySQL
 1. Menentukan masing-masing variabel lingkungan di atas, serta menghubungkan container ke jaringan aplikasi kami.
-![alt text](assets/multi6.png)
-
-2. Jika melihat log untuk container (docker logs <container-id>), maka akan terlihat pesan yang menunjukkan bahwa container tersebut menggunakan database mysql.
-![alt text](assets/multi7.png)
-
-3. Buka aplikasi di browser dan tambahkan beberapa item ke daftar tugas.
 ![alt text](assets/multi8.png)
 
-4. Hubungkan ke database mysql dan buktikan bahwa item sedang ditulis ke database. Ingat, kata sandinya rahasia.
+2. Jika melihat log untuk container (docker logs <container-id>), maka akan terlihat pesan yang menunjukkan bahwa container tersebut menggunakan database mysql.
 ![alt text](assets/multi9.png)
 
-Dan di shell mysql, jalankan perintah berikut:
+3. Buka aplikasi di browser dan tambahkan beberapa item ke daftar tugas.
 ![alt text](assets/multi10.png)
+
+4. Hubungkan ke database mysql dan buktikan bahwa item sedang ditulis ke database. Ingat, kata sandinya rahasia.
+![alt text](assets/multi11.png)
+![alt text](assets/multi12.png)
+
+- Dan di shell mysql, jalankan perintah berikut:
+![alt text](assets/multi13.png)
 
 
 ### USING DOCKER COMPOSE
-#### Install docker-compose
-![alt text](assets/uninstall.png)
 
+#### Install docker-compose
 #### Create our compose file
 1. Di root proyek aplikasi, buat file bernama docker-compose.yml.
-![alt text](assets/uninstall.png)
 
 2. Di file penulisan, kita akan memulai dengan menentukan versi skema.
-![alt text](assets/uninstall.png)
 
 3. Menentukan daftar layanan (atau container) yang ingin kita jalankan sebagai bagian dari aplikasi kita. Lalu, mulai memigrasikan layanan sekaligus ke dalam file penulisan.
-![alt text](assets/uninstall.png)
+
+![alt text](assets/compose1.png)
+![alt text](assets/compose2.png)
 
 #### Defining the App Service
 Ingat, ini adalah perintah yang digunakan untuk mendefinisikan container aplikasi.
-![alt text](assets/uninstall.png)
+![alt text](assets/compose3.png)
 
 1. Tentukan entri layanan dan gambar untuk kontainer. Dapat memilih nama apa pun untuk layanan ini. Nama tersebut secara otomatis akan menjadi alias jaringan, yang akan berguna saat mendefinisikan layanan MySQL kita.
-![alt text](assets/uninstall.png)
 2. Pindahkan gambar itu ke file kita.
 3. Migrasikan bagian -p 3000:3000 dari perintah dengan menentukan port untuk layanan tersebut.
 4. Memigrasikan direktori kerja (-w /app) dan pemetaan volume (-v $PWD:/app) dengan menggunakan definisi working_dir dan volumes. Volume juga memiliki sintaks pendek dan panjang.
 5. Memigrasikan definisi variabel environment menggunakan environment key.
-![alt text](assets/uninstall.png)
+![alt text](assets/compose4.png)
 
 #### Defining the MySQL Service
+![alt text](assets/compose5.png)
 1. Mendefinisikan layanan baru dan menamainya mysql sehingga secara otomatis mendapatkan alias jaringan. Dan menentukan gambar yang akan digunakan juga.
 2. Mendefinisikan pemetaan volume. Dan kemudian menentukan titik pemasangan di konfigurasi layanan.
 3. Menentukan environment variable.
 Pada titik ini, docker-compose.yml lengkap kita akan terlihat seperti ini:
-![alt text](assets/uninstall.png)
+![alt text](assets/compose6.png)
 
 Running our Application Stack
 1. Pastikan tidak ada salinan aplikasi/db lain yang berjalan terlebih dahulu (docker ps dan docker rm -f <ids>).
 2. Mulai tumpukan aplikasi menggunakan perintah docker-compose up. Kami akan menambahkan flag -d untuk menjalankan semuanya di latar belakang.
-![alt text](assets/uninstall.png)
+![alt text](assets/compose7.png)
+![alt text](assets/compose8.png)
 
 3. Gunakan perintah docker-compose logs -f. Untuk melihat log dari masing-masing layanan disisipkan ke dalam satu aliran. Flag -f "mengikuti" log, sehingga akan memberi Anda keluaran langsung saat dibuat.
-![alt text](assets/uninstall.png)
+![alt text](assets/compose9.png)
 
 #### Tearing it All Down
 Untuk menghentikan container dan jaringan akan dihapus.
-![alt text](assets/uninstall.png)
+![alt text](assets/compose10.png)
 
 
 ### IMAGE BUILDING BEST PRACTICES
 
 1. Gunakan perintah docker image history untuk melihat lapisan pada gambar docker-101 yang dibuat sebelumnya di tutorial.
-![alt text](assets/uninstall.png)
+![alt text](assets/image1.png)
 
 2. Lihat bahwa beberapa baris terpotong. Jika Anda menambahkan flag --no-trunc, maka akan menampilkan output penuh
-![alt text](assets/uninstall.png)
+![alt text](assets/image2.png)
 
 Layer Caching
 1. Perbarui Dockerfile untuk menyalin di package.json terlebih dahulu, instal dependensi, lalu salin semua yang lain di dalamnya.
-![alt text](assets/uninstall.png)
+![alt text](assets/image3.png)
 
 2. Build gambar baru menggunakan docker build.
-![alt text](assets/uninstall.png)
+![alt text](assets/image4.png)
 
 3. Buat perubahan pada file src/static/index.html (seperti mengubah <title> menjadi "The Awesome Todo App").
-![alt text](assets/uninstall.png)
+![alt text](assets/image5.png)
 
 4. Build image Docker menggunakan docker build lagi. Dan sekarang outputnya akan terlihat sedikit berbeda. Pada waktu building menjadi lebih cepat (0.9s).
-![alt text](assets/uninstall.png)
+![alt text](assets/image6.png)
