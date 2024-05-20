@@ -31,57 +31,59 @@ Buka link di bawah ini pada browser
 https://www.docker.com/101-tutorial/
 
 Masuk ke https://labs.play-with-docker.com/ untuk mengakses terminal PWD Anda
-![alt text](assets/prepare.png)
+![alt text](assets/docker-play.png)
 
 Setelah login kemudian klik Start. Setelah muncul halaman seperti di bawah ini, “add new instance”.
-![alt text](assets/prepare1.png)
+![alt text](assets/get1.png)
 
 Ketik perintah berikut di terminal PWD: 
 docker run -dp 80:80 docker/getting-started:pwd
-![alt text](assets/prepare2.png)
+![alt text](assets/get2.png)
+
 Keterangan:
 -d - menjalankan container dalam mode terpisah (di latar belakang)
 -p 80:80 - memetakan port 80 dari host ke port 80 di container
 
 Tunggu hingga container dimulai dan klik icon port 80, akan menampilkan halaman seperti berikut tentang langkah-langkah cara menggunakan docker 101 pada pwd
-![alt text](assets/prepare3.png)
+![alt text](assets/get3.png)
+![alt text](assets/get4.png)
 
 
 
 ### OUR APPLICATION
 - Getting our App into PWD
 Download zip dan upload ke Play with Docker. Atau dengan melakukan drag and drop (atau file lainnya) ke terminal di PWD. Kemudian, ekstrak file zip.
-![alt text](assets/uninstall.png)
+![alt text](assets/get5.png)
 
 - Ubah direktori kerja Anda saat ini ke folder 'aplikasi' baru menggunakan `cd app/`. Di direktori ini, Anda akan melihat aplikasi sederhana berbasis Node dengan perintah `ls`
-![alt text](assets/uninstall.png)
+![alt text](assets/get6.png)
 
 #### Building the App's Container Image
 
 1. Buat file bernama Dockerfile dengan konten berikut.
-![alt text](assets/uninstall.png)
-
 2. Build container image menggunakan perintah docker build.
-![alt text](assets/uninstall.png)
+![alt text](assets/get7.png)
+![alt text](assets/get8.png)
 
 #### Starting an App Container
 1. Mulai kontainer menggunakan perintah docker run
-![alt text](assets/uninstall.png)
+![alt text](assets/get9.png)
 
 2. Buka aplikasi dengan mengklik badge "3000" di bagian atas antarmuka PWD. Setelah terbuka, akan tertampil todo list yang kosong!
-![alt text](assets/uninstall.png)
+![alt text](assets/get10.png)
+![alt text](assets/get11.png)
 
 
 ### UPDATING OUR APP
 #### Updating our Source Code
 1. Dalam file ~/app/src/static/js/app.js, perbarui baris 56 untuk menggunakan teks kosong yang baru.
-![alt text](assets/uninstall.png)
+![alt text](assets/get12.png)
 
 2. Buat versi gambar terbaru kita, menggunakan perintah yang sama yang kita gunakan sebelumnya.
-![alt text](assets/uninstall.png)
+![alt text](assets/get13.png)
 
 3. Mulai container baru menggunakan kode yang diperbarui.
-![alt text](assets/uninstall.png)
+
 Dan terlihat terdapat error sehingga tidak dapat memulai container baru karena container lama masih berjalan dan menggunakan port host 3000 dan hanya satu proses (termasuk container) yang dapat listen port tertentu. Untuk memperbaikinya, kita perlu menghapus container lama.
 
 #### Replacing our Old Container
@@ -89,13 +91,13 @@ Dan terlihat terdapat error sehingga tidak dapat memulai container baru karena c
 2. Kemudian, itu bisa dihilangkan/dihapus
 3. Dapatkan ID kontainer dengan menggunakan perintah docker ps.
 4. Gunakan perintah docker stop untuk menghentikan container.
-![alt text](assets/uninstall.png)
+![alt text](assets/get14.png)
 
 5. Setelah container berhenti, hapus dengan menggunakan perintah docker rm. Kemudian run untuk mulai aplikasi yang diperbarui.
-![alt text](assets/uninstall.png)
+![alt text](assets/get15.png)
 
 6. Buka aplikasi dan lihat teks bantuan terbaru!
-![alt text](assets/uninstall.png)
+![alt text](assets/get16.png)
 
 
 ### SHARING OUR APP
@@ -106,23 +108,23 @@ Dan terlihat terdapat error sehingga tidak dapat memulai container baru karena c
 3. Klik tombol Buat Repository.
 4. Untuk nama repo, gunakan 101-todo-app. Pastikan Visibilitasnya Publik.
 5. Klik tombol Create!
-![alt text](assets/uninstall.png)
-
+![alt text](assets/share1.png)
+![alt text](assets/share2.png)
 
 #### Pushing Our Image
 
 Dengan menggunakan perintah `docker push shofira/101-todo-app`, akan terlihat pesan gagal karena perintah push sedang mencari gambar bernama shofira/101-todo-app, tetapi tidak menemukannya. Jika Anda menjalankan docker image ls, Anda juga tidak akan melihatnya.
 Untuk memperbaikinya, kita perlu "memberi tag" pada gambar kita, yang pada dasarnya berarti memberinya nama lain.
-![alt text](assets/uninstall.png)
+![alt text](assets/share3.png)
 
 Login ke Docker Hub menggunakan perintah `docker login -u shofira`.
-![alt text](assets/uninstall.png)
+![alt text](assets/share4.png)
 
 Gunakan perintah docker tag untuk memberi nama baru pada gambar docker-101. Kemudian coba lagi perintah push. Jika menyalin value dari Docker Hub, hapus pada bagian nama tag karena tidak menambahkan tag ke nama gambar.
-![alt text](assets/uninstall.png)
+![alt text](assets/share5.png)
 
 #### Running our Image on a New Instance
-![alt text](assets/uninstall.png)
+![alt text](assets/share6.png)
 
 
 ### PERSISTING OUR DB
@@ -134,52 +136,50 @@ Saat sebuah container berjalan, ia menggunakan berbagai lapisan dari suatu gamba
 Untuk melihat cara kerjanya, kita akan memulai dua container dan membuat file di masing-masing container. Apa yang akan Anda lihat adalah file yang dibuat di satu wadah tidak tersedia di wadah lain.
 
 1. Mulai wadah ubuntu yang akan membuat file bernama /data.txt dengan nomor acak antara 1 dan 10000.
-![alt text](assets/uninstall.png)
 
 - Jika Anda bertanya-tanya tentang perintahnya, kami memulai bash shell dan menjalankan dua perintah (mengapa kami memiliki &&). Bagian pertama mengambil satu nomor acak dan menuliskannya ke /data.txt. Perintah kedua hanyalah mengawasi file agar container tetap berjalan.
-Gunakan docker ps untuk mendapatkan ID container
+- Gunakan docker ps untuk mendapatkan ID container
+![alt text](assets/persisting1.png)
+> Validasi kita dapat melihat output dengan mengeksekusinya ke dalam container, dan akan terlihat nomor acak
 
-2. Validasi kita dapat melihat output dengan mengeksekusinya ke dalam container, dan akan terlihat nomor acak
-![alt text](assets/uninstall.png)
-
-3. Mulai container ubuntu lain (gambar yang sama) dan terlihat bahwa tidak memiliki file yang sama.
-![alt text](assets/uninstall.png)
+2. Mulai container ubuntu lain (gambar yang sama) dan terlihat bahwa tidak memiliki file yang sama.
 - Dan lihat! Tidak ada file data.txt di sana! Itu karena itu ditulis ke ruang awal hanya untuk wadah pertama.
 
-4. Hapus container pertama menggunakan perintah docker rm -f.
-![alt text](assets/uninstall.png)
+3. Hapus container pertama menggunakan perintah docker rm -f.
+![alt text](assets/persisting2.png)
 
 #### Container Volumes
 #### Persisting our Todo Data
 
 1. Buat volume dengan menggunakan perintah docker volume create.
-![alt text](assets/uninstall.png)
+![alt text](assets/persisting3.png)
 
 - Hentikan docker dengan port 3000 yang masih berjalan supaya tidak ada error.
 2. Mulai container todo, tetapi tambahkan tanda -v untuk menentukan pemasangan volume. Penggunaan volume bernama dan memasangnya ke /etc/todos, yang akan menangkap semua file yang dibuat di jalur tersebut.
-![alt text](assets/uninstall.png)
+![alt text](assets/persisting4.png)
 
 3. Setelah container dijalankan, buka aplikasi dan tambahkan beberapa item ke daftar tugas Anda.
-![alt text](assets/uninstall.png)
+![alt text](assets/persisting5.png)
 
 4. Hapus container untuk aplikasi todo. Gunakan docker ps untuk mendapatkan ID dan kemudian docker rm -f <id> untuk menghapusnya.
 5. Mulai container baru menggunakan perintah yang sama dari atas.
 6. Buka aplikasinya. Akan terlihat item tadi telah dibuat.
+![alt text](assets/persisting6.png)
+![alt text](assets/persisting7.png)
 
 #### Diving into our Volume
 Banyak orang sering bertanya "Di mana sebenarnya Docker menyimpan data ketika menggunakan volume bernama?" Jika ingin mengetahuinya, gunakan perintah docker volume inspect.
-![alt text](assets/uninstall.png)
 Mountpoint adalah lokasi sebenarnya pada disk tempat data disimpan. Perhatikan bahwa pada sebagian besar mesin, kepemilikan akses root untuk mengakses direktori ini dari host. Tapi, di situlah tempatnya!
-
+![alt text](assets/persisting8.png)
 
 ### USING BIND MOUNTS
 
 #### Starting a Dev-Mode Container
 1. Pastikan Anda tidak menjalankan container docker-101 sebelumnya.
-![alt text](assets/uninstall.png)
+![alt text](assets/bind1.png)
 
 2. Jalankan perintah berikut.
-![alt text](assets/uninstall.png)
+![alt text](assets/bind2.png)
 - -dp 3000:3000 - sama seperti sebelumnya. Jalankan dalam mode terpisah (latar belakang) dan buat pemetaan port
 - -w /app - menyetel "direktori kerja" atau direktori saat ini tempat perintah akan dijalankan
 node:10-alpine - gambar yang akan digunakan. Perhatikan bahwa ini adalah gambar dasar untuk aplikasi kita dari Dockerfile
@@ -187,12 +187,15 @@ node:10-alpine - gambar yang akan digunakan. Perhatikan bahwa ini adalah gambar 
 
 3. Lihat log menggunakan docker logs -f <container-id>.
 Setelah selesai melihat log, keluar dengan menekan Ctrl+C.
-![alt text](assets/uninstall.png)
+![alt text](assets/bind3.png)
+![alt text](assets/bind4.png)
+![alt text](assets/bind5.png)
 
 4. Buat perubahan pada aplikasinya. Di file src/static/js/app.js, mari kita ubah tombol "Tambahkan Item" menjadi "Tambah". Perubahan ini akan berada pada baris 109.
+![alt text](assets/bind6.png)
 
 5. Refresh halaman (atau buka) dan Anda akan segera melihat perubahannya terlihat di browser. Mungkin diperlukan waktu beberapa detik untuk memulai ulang server Node, jadi jika mendapatkan kesalahan, coba refresh setelah beberapa detik.
-
+![alt text](assets/bind7.png)
 
 ### MULTI CONTAINER APPS
 
@@ -200,36 +203,36 @@ Setelah selesai melihat log, keluar dengan menekan Ctrl+C.
 Ada dua cara untuk menempatkan container di jaringan: 1) Tetapkan di awal atau 2) sambungkan container yang sudah ada. Untuk saat ini, kita akan membuat jaringan terlebih dahulu dan melampirkan container MySQL saat startup.
 1. Buat jaringan.
 2. Jalankan container MySQL dan lampirkan ke jaringan. Mendefinisikan beberapa environment variable yang akan digunakan database untuk menginisialisasi database (lihat bagian "Environment Variable" di daftar MySQL Docker Hub).
-![alt text](assets/uninstall.png)
+![alt text](assets/multi1.png)
 
 3. Untuk mengonfirmasi bahwa kami telah mengaktifkan dan menjalankan database, sambungkan ke database dan verifikasi koneksinya.
-![alt text](assets/uninstall.png)
+![alt text](assets/multi2.png)
 
 - Saat prompt kata sandi muncul, ketikkan secret. Di shell MySQL, daftar database dan verifikasi dapat melihat database todos dan akan terlihat tampilan seperti ini:
-![alt text](assets/uninstall.png)
+![alt text](assets/multi3.png)
 
 #### Connecting to MySQL
 1. Mulai container baru menggunakan gambar nicolaka/netshoot. Pastikan untuk menghubungkannya ke jaringan yang sama.
-![alt text](assets/uninstall.png)
+![alt text](assets/multi4.png)
 
 - Di dalam container, gunakan perintah dig, yang merupakan alat DNS yang berguna. Kita akan mencari alamat IP untuk nama host mysql.
-![alt text](assets/uninstall.png)
+![alt text](assets/multi5.png)
 
 #### Running our App with MySQL
 1. Menentukan masing-masing variabel lingkungan di atas, serta menghubungkan container ke jaringan aplikasi kami.
-![alt text](assets/uninstall.png)
+![alt text](assets/multi6.png)
 
 2. Jika melihat log untuk container (docker logs <container-id>), maka akan terlihat pesan yang menunjukkan bahwa container tersebut menggunakan database mysql.
-![alt text](assets/uninstall.png)
+![alt text](assets/multi7.png)
 
 3. Buka aplikasi di browser dan tambahkan beberapa item ke daftar tugas.
-![alt text](assets/uninstall.png)
+![alt text](assets/multi8.png)
 
 4. Hubungkan ke database mysql dan buktikan bahwa item sedang ditulis ke database. Ingat, kata sandinya rahasia.
-![alt text](assets/uninstall.png)
+![alt text](assets/multi9.png)
 
 Dan di shell mysql, jalankan perintah berikut:
-![alt text](assets/uninstall.png)
+![alt text](assets/multi10.png)
 
 
 ### USING DOCKER COMPOSE
