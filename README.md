@@ -16,7 +16,7 @@
 | TUGAS 5 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/blob/main/Tugas_5/Readme.md)_ |
 | TUGAS 6 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/blob/main/Tugas_6/Readme.md)_ |
 | TUGAS 7 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/blob/main/Tugas_7/Readme.md)_ |
-| TUGAS 7 | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/blob/main/Project-Charter-Kelompok/readme.md)_ |
+| Project Charter Kelompok | _[FILE](https://github.com/shofiraya/Administrasi_Jaringan_kel_5/blob/main/Project-Charter-Kelompok/readme.md)_ |
 
 ## KELOMPOK 5
 | NAMA | NRP |
